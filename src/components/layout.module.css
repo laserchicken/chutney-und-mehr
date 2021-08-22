@@ -1,0 +1,23 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 0.666em;
+}
+
+@media (min-width: 768px) {
+  :root {
+    font-size: 0.75em;
+  }
+}
+
+@media (min-width: 968px) {
+  :root {
+    font-size: .875em;
+  }
+}
+
+body {
+  margin: 0;
+}

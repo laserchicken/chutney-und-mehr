@@ -1,0 +1,35 @@
+header {
+  background-color: #01AB55;
+  height: 10vh;
+}
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 60rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+.wrapper {
+  margin: auto 5px;
+}
+
+.homepageLink {
+  margin: auto 0;
+}
