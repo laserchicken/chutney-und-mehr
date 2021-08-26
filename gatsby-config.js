@@ -20,5 +20,25 @@ module.exports = {
         icon: `src/images/icon.png`,
       },
     },
+    {
+      resolve: `gatsby-plugin-react-svg`,
+      options: {
+        rule: {
+          include: /\.inline\.svg$/,
+        },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: `src/images/favicon.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-anchor-links`,
+      options: {
+        duration: 1500,
+      },
+    },
   ],
 };

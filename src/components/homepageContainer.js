@@ -32,7 +32,7 @@ export default function HomepageContainer() {
 
   return (
     <div>
-      <main>Test</main>
+      <main></main>
     </div>
   );
 }

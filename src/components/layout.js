@@ -8,7 +8,6 @@ export default function Layout({ children, showResults }) {
     <div>
       <Header />
       {children}
-      <Footer />
     </div>
   );
 }

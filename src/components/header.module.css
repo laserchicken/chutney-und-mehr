@@ -1,5 +1,5 @@
 header {
-  background-color: #01AB55;
+  background-color: white;
   height: 10vh;
 }
 
@@ -9,7 +9,8 @@ header {
   height: 100%;
   display: flex;
   justify-content: space-between;
-  max-width: 60rem;
+  align-items: center;
+  max-width: 90%;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
@@ -21,15 +22,39 @@ header {
   }
 }
 
+.navigation {
+  width: 30%;
+  letter-spacing: 2px;
+  display: flex;
+  font-size: 8px;
+  justify-content: space-between;
+}
+
+@media (min-width: 968px) {
+  .navigation {
+    font-size: 12px;
+  }
+}
+
 .logo {
-  width: 150px;
-  height: auto;
+  width: 20%;
 }
 
-.wrapper {
-  margin: auto 5px;
+.link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
 }
 
-.homepageLink {
-  margin: auto 0;
+.social {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.socialIcon {
+  height: 1.5em;
+  width: 1.5em;
 }
