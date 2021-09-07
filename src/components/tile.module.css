@@ -1,0 +1,154 @@
+.tile {
+  width: 100vw;
+  height: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+@media (min-width: 800px) {
+  .tile {
+    width: 33.33vw;
+    height: 33.33vw;
+  }
+}
+
+.textWrapper {
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 3px;
+  width: 75%;
+  line-height: 1.5;
+}
+
+.header {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+@media (min-width: 800px) {
+  .header {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .header {
+    font-size: 3rem;
+  }
+}
+
+.plum {
+  background: #8C89AB;
+}
+
+.tomatenMango {
+  background: #D5CE92;
+}
+
+.redOnion {
+  background: #C6A79A;
+}
+
+.chily {
+  background: #C7C8CA;
+}
+
+.apple {
+  background: #A2B58B;
+}
+
+.cherry {
+  background: #CC98B0;
+}
+
+.image {
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.plums {
+  background-image: url(../images/plums.png);
+}
+
+.mango {
+  background-image: url(../images/mango.png);
+}
+
+.redOnions {
+  background-image: url(../images/redOnions.png);  
+}
+
+.chilies {
+  background-image: url(../images/chily.png);  
+}
+
+.apples {
+  background-image: url(../images/apples.png);  
+}
+
+.cherries {
+  background-image: url(../images/cherries.png);  
+}
+
+.plumsChutney {
+  background-image: url(../images/plums-chutney.png);
+}
+
+.tomatenMangoChutney {
+  background-image: url(../images/tomaten-mango-chutney.png);
+}
+
+.redOnionsChutney {
+  background-image: url(../images/red-onions-chutney.png);  
+}
+
+.chilyMarmelade {
+  background-image: url(../images/chily-marmelade.png);  
+}
+
+.appleChutney {
+  background-image: url(../images/apple-chutney.png);  
+}
+
+.cherryChutney {
+  background-image: url(../images/cherry-chutney.png);  
+}
+
+.separator {
+  width: 80%;
+  border-bottom: 1px solid black;
+}
+
+@media (min-width: 800px) {
+  .separator {
+    border-bottom: 2px solid black;
+  }
+}
+
+@media (min-width: 1400px) {
+  .separator {
+    border-bottom: 3px solid black;
+  }
+}
+
+.logo {
+  width: 70%;
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 800px) {
+  .logo {
+    margin-top: 2rem;
+    width: 60%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .logo {
+    margin-top: 3rem;
+    width: 50%;
+  }
+}
