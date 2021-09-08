@@ -1,0 +1,22 @@
+.tiles {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 1200px) {
+  .tiles {
+    flex-direction: row;
+  }
+}
+
+.oneHalf {
+  width: 100vw;
+  height: 100vw;
+}
+
+@media (min-width: 1200px) {
+  .oneHalf {
+    width: 50vw;
+    height: 50vw;
+  }
+}

@@ -1,11 +1,10 @@
 import React from "react";
 import Logo from "../icons/logo-text.inline.svg";
-import * as styles from "./tile.module.css";
 
-export default function TextTile({ header, backgroundColor }) {
+export default function TitleTile({ header, backgroundColor, styles }) {
   return (
     <div className={`${styles.tile} ${styles[backgroundColor]}`}>
-      <div className={styles.textWrapper}>
+      <div className={`${styles.textWrapper} ${styles.uppercase}`}>
         <h1
           className={styles.header}
           dangerouslySetInnerHTML={{ __html: header }}

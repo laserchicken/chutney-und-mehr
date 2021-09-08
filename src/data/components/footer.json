@@ -1,8 +1,8 @@
 {
-  "email": "<a href='mailto:contact@chutneyundmehr.com'/>contact@chutneyundmehr.com</a>",
-  "address": "Fischerstr. 15, 16515 Oranienburg",
-  "tel": "017 646 055 690",
-  "author": "designed and developed: <a href='http://be.net/agatakmiecinska'>be.net/agatakmiecinska</a>",
+  "email": "<a href='mailto:hallo@chutneyundmehr.de'/>hallo@chutneyundmehr.de</a>",
+  "address": "<a target='_blank' href='http://maps.google.com/?q=Fischerstr. 15, 16515 Oranienburg'>Fischerstr. 15, 16515 Oranienburg</a>",
+  "tel": "<a href='tel:017 646 055 690'>017 646 055 690</a>",
+  "author": "designed and developed: <a target='_blank' href='http://be.net/agatakmiecinska'>kmiecinskastudio</a>",
   "separator": "|",
   "rights": "copyright @ chutneyundmehr"
 }

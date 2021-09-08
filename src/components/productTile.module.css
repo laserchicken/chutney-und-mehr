@@ -1,0 +1,94 @@
+.tile {
+  width: 50vw;
+  height: 50vw;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+@media (min-width: 1200px) {
+  .tile {
+    width: 20vw;
+    height: 20vw;
+    margin: 1rem;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.header {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+
+@media (min-width: 800px) {
+  .header {
+    margin-bottom: 2rem;
+    font-size: calc(.3rem + 1vw);
+  }
+}
+
+@media (min-width: 1400px) {
+  .header {
+    font-size: calc(.5rem + 1vw);
+  }
+}
+
+.logo {
+  width: 70%;
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 800px) {
+  .logo {
+    margin-top: 2rem;
+    width: 60%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .logo {
+    margin-top: 3rem;
+    width: 50%;
+  }
+}
+
+.plum {
+  background: #8C89AB;
+}
+
+.tomatenMango {
+  background: #D5CE92;
+}
+
+.redOnion {
+  background: #C6A79A;
+}
+
+.chily {
+  background: #C7C8CA;
+}
+
+.apple {
+  background: #A2B58B;
+}
+
+.cherry {
+  background: #CC98B0;
+}
+
+.textWrapper {
+  text-align: left;
+  letter-spacing: 3px;
+  width: 75%;
+  line-height: 1.5;
+}
+
+.separator {
+  width: 80%;
+  border-bottom: 1px solid black;
+}

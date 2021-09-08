@@ -51,9 +51,9 @@ export default function Footer() {
           <span className={`${styles.textSeparator} ${styles.desktopOnly}`}>
             {separator}
           </span>
-          <span>{address}</span>
+          <span dangerouslySetInnerHTML={{ __html: address }} />
           <span className={styles.textSeparator}>{separator}</span>
-          <span>{tel}</span>
+          <span dangerouslySetInnerHTML={{ __html: tel }} />
         </div>
         <div className={styles.separator}></div>
         <div className={`${styles.rightsAuthor} ${styles.small}`}>

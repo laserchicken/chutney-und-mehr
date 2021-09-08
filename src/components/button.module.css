@@ -1,0 +1,22 @@
+.button {
+  width: 50vw;
+  height: 6rem;
+  background: #A2B58B;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  font-size: calc(.5rem + 1vw);
+  text-decoration: none;
+}
+
+@media (min-width: 800px) {
+  .button {
+    width: 25vw;
+    font-size: calc(.3rem + 1vw);
+  }
+}

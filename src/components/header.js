@@ -11,10 +11,13 @@ import * as styles from "./header.module.css";
 
 const Social = ({ className }) => (
   <div className={className}>
-    <a href="https://instagram.com/chutney_und_mehr">
+    <a target="_blank" href="https://instagram.com/chutney_und_mehr">
       <Instagram className={styles.icon} />
     </a>
-    <a href="https://m.facebook.com/Chutney-und-mehr-Manufaktur-103186701958138/">
+    <a
+      target="_blank"
+      href="https://m.facebook.com/Chutney-und-mehr-Manufaktur-103186701958138/"
+    >
       <Facebook className={styles.icon} />
     </a>
     <a href="mailto:hallo@chutneyundmehr.de">

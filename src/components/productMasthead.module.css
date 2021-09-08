@@ -1,0 +1,29 @@
+.masthead {
+  height: 75vh;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.plums {
+  background-image: url(../images/plums-hero.png);
+}
+
+.mango {
+  background-image: url(../images/mango-hero.png);
+}
+
+.redOnions {
+  background-image: url(../images/red-onions-hero.png);  
+}
+
+.chilies {
+  background-image: url(../images/chily-hero.png);  
+}
+
+.apples {
+  background-image: url(../images/apples-hero.png);  
+}
+
+.cherries {
+  background-image: url(../images/cherries-hero.png);  
+}
