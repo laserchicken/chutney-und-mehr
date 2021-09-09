@@ -12,8 +12,8 @@ export default function TomatenMangoChutney() {
         backgroundColor="tomatenMango"
         header="tomaten-mango<br>chutney"
         image="tomatenMangoChutney"
-        subheader="100% vegan | ℮ 145 gramm"
-        contents="<b>ZUTATEN</b>:<br/>Tomaten frisch 38%, Mango 38%, Gemüsezwiebeln, brauner Zucker 5,7%, Rapsöl, , Balsamico Bianco, Steinsalz, Ingwer frisch, Bockshornkleesamen, Senfsaat, Koriandersamen, Pfeffer Schwarz, Limetten blätter, Chili."
+        subheader="<b>100% vegan | ℮ 145 gramm</b>"
+        contents="<b>ZUTATEN</b>:<br/>Tomaten frisch 38%, Mango 38%, Gemüsezwiebeln, brauner Zucker 5,7%, Rapsöl, Balsamico Bianco, Steinsalz, Ingwer frisch, Bockshornkleesamen, Senfsaat, Koriandersamen, Pfeffer Schwarz, Limetten blätter, Chili."
         nutritionFacts={{
           headerColumns: ["DURCHSCHNITTLICHE NÄHRWERTE", "pro 100 g"],
           rows: [

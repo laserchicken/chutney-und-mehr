@@ -44,12 +44,14 @@ export default function Header() {
   const [burgerMenuExpanded, setBurgerMenuExpanded] = useState(false);
 
   return (
-    <Sticky enabled={true}>
+    <Sticky innerZ={500} enabled={true}>
       <header className={styles.header}>
         <div className={styles.content}>
           <Navigation className={styles.navigationWrapper} />
           <div className={styles.logo}>
-            <Logo />
+            <Link to="/">
+              <Logo />
+            </Link>
           </div>
           <div className={styles.burger}>
             <Burger

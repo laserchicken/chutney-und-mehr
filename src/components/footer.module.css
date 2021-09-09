@@ -38,15 +38,21 @@
 }
 
 .logo {
-  margin: 2rem;
+  margin: 2rem 2rem 0;
+  width: 13rem;
 }
 
 .contact {
-  margin: 2rem 0 4rem;
+  margin: 0 0 4rem;
 }
 
-a {
-  color: black;
+@media (min-width: 800px) {
+  .contact {
+    margin: 2rem 0 4rem;
+  }
+}
+
+footer a {
   display: inline-block;
 }
 

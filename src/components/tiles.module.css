@@ -2,8 +2,13 @@
   display: flex;
   flex-direction: column;
   text-decoration: none;
+/*  transition: filter .2s ease-in-out;*/
 }
-
+/*
+.row:hover {
+  filter: brightness(50%);
+}
+*/
 .rowReverse {
   flex-direction: column-reverse;
 }

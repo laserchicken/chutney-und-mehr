@@ -16,12 +16,12 @@ export default function DescriptionTile({
       className={`${styles.tile} ${styles.description} ${styles[backgroundColor]} ${className}`}
     >
       <div className={styles.description}>
-        <h3
+        <p
           className={styles.uppercase}
           dangerouslySetInnerHTML={{ __html: subheader }}
-        ></h3>
+        ></p>
         <h2
-          className={styles.uppercase}
+          className={`${styles.uppercase} ${styles.spread}`}
           dangerouslySetInnerHTML={{ __html: header }}
         ></h2>
         <p dangerouslySetInnerHTML={{ __html: contents }}></p>

@@ -21,7 +21,7 @@ export default function ProductDetails({
         nutritionFacts={nutritionFacts}
         bottomSubheader={bottomSubheader}
         backgroundColor={backgroundColor}
-        className={styles.oneHalf}
+        className={`${styles.oneHalf} ${styles.fullHeight}`}
       />
       <ImageTile image={image} className={styles.oneHalf} />
     </div>

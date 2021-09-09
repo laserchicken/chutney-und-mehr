@@ -6,7 +6,7 @@ export default function TitleTile({ header, backgroundColor, styles }) {
     <div className={`${styles.tile} ${styles[backgroundColor]}`}>
       <div className={`${styles.textWrapper} ${styles.uppercase}`}>
         <h1
-          className={styles.header}
+          className={`${styles.header} ${styles.spread}`}
           dangerouslySetInnerHTML={{ __html: header }}
         ></h1>
         <div className={styles.separator}></div>

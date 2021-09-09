@@ -21,13 +21,12 @@
 }
 
 .header {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 3rem;
 }
 
 @media (min-width: 800px) {
   .header {
-    margin-bottom: 2rem;
     font-size: calc(.3rem + 1vw);
   }
 }
@@ -40,19 +39,19 @@
 
 .logo {
   width: 70%;
-  margin-top: 2.5rem;
+  margin-top: 1rem;
 }
 
 @media (min-width: 800px) {
   .logo {
-    margin-top: 2rem;
+
     width: 60%;
   }
 }
 
 @media (min-width: 1400px) {
   .logo {
-    margin-top: 3rem;
+
     width: 50%;
   }
 }

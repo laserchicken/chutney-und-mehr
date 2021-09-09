@@ -20,19 +20,26 @@
 
 .textWrapper {
   text-align: left;
-  letter-spacing: 3px;
   width: 75%;
   line-height: 1.5;
 }
 
 .description {
   text-align: left;
-  width: 75%;
+  width: 80%;
   line-height: 1.5;
 }
 
-.description p {
-  letter-spacing: 2px;
+.spread {
+  letter-spacing: 3px;
+}
+
+p, th, td, span, a {
+  font-weight: 300;
+}
+
+b {
+  letter-spacing: 1.5px;
 }
 
 .header {
@@ -208,5 +215,6 @@ h3 {
 }
 
 .nutritionFacts table {
+  width: 80%;
   border-collapse: collapse;
 }

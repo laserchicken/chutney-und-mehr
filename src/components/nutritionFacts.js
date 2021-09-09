@@ -17,17 +17,19 @@ export default function NutritionFacts({ nutritionFacts, className }) {
       <table>
         <tr>
           {nutritionFacts.headerColumns.map((column) => (
-            <th>{column}</th>
+            <th>
+              <b>{column}</b>
+            </th>
           ))}
         </tr>
         {nutritionFacts.rows.map((row) => (
           <Row columns={row} />
         ))}
       </table>
-      <div
+      <span
         className={styles.note}
         dangerouslySetInnerHTML={{ __html: nutritionFacts.note }}
-      ></div>
+      ></span>
     </div>
   );
 }
