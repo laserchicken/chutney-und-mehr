@@ -3,28 +3,9 @@ import { Link } from "gatsby";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import Sticky from "react-stickynode";
 import Logo from "../icons/logo-text.inline.svg";
-import Facebook from "../icons/facebook.inline.svg";
-import Instagram from "../icons/instagram.inline.svg";
-import Envelope from "../icons/envelope.inline.svg";
 import Burger from "../icons/burger.inline.svg";
+import Social from "./social";
 import * as styles from "./header.module.css";
-
-const Social = ({ className }) => (
-  <div className={className}>
-    <a target="_blank" href="https://instagram.com/chutney_und_mehr">
-      <Instagram className={styles.icon} />
-    </a>
-    <a
-      target="_blank"
-      href="https://m.facebook.com/Chutney-und-mehr-Manufaktur-103186701958138/"
-    >
-      <Facebook className={styles.icon} />
-    </a>
-    <a href="mailto:hallo@chutneyundmehr.de">
-      <Envelope className={styles.icon} />
-    </a>
-  </div>
-);
 
 const Navigation = ({ className }) => (
   <div className={`${styles.navigationCommon} ${className}`}>

@@ -1,0 +1,181 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem;
+}
+
+@media (min-width: 800px) {
+  .wrapper {
+    flex-direction: row;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 5rem;
+  width: 100vw;
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  .content {
+    padding: 0;
+    margin: 3vw;
+    width: 50vw;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1400px) {
+  .content {
+    margin: 0;
+    padding: 5vw;
+  }
+}
+
+@media (min-width: 1600px) {
+  .content {
+    padding: 8rem;
+  }
+}
+
+.image {
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url(../images/jarek.png);
+  width: 100vw;
+  height: 100vh;
+}
+
+@media (min-width: 800px) {
+  .image {
+    width: 50vw;
+    height: 70vw;
+  }
+}
+
+.header {
+  font-size: 2.5rem;
+  font-weight: 200;
+  letter-spacing: 6px;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 800px) {
+  .header {
+    font-size: 2.8vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  .header {
+    font-size: 3.2rem;
+  }
+}
+
+.contact {
+  margin-top: 1.7rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+
+@media (min-width: 800px) {
+  .contact {
+    font-size: 1.5vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  .contact {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .contact {
+    margin-top: 10rem;
+  }
+}
+
+.email {
+  margin-bottom: 1.5rem
+}
+
+.aboutTextIntro {
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 800px) {
+  .aboutTextIntro {
+    font-size: 1.5vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  .aboutTextIntro {
+    font-size: 1.7rem;
+  }
+}
+
+.aboutText {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+@media (min-width: 800px) {
+  .aboutText {
+    font-size: 1.3vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  .aboutText {
+    font-size: 1.4rem;
+  }
+}
+
+.logo {
+  width: 17rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 800px) {
+  .logo {
+    width: 20vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  .logo {
+    width: 23rem;
+  }
+}
+
+.contact a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.phone, .address {
+  display: inline-block;
+  width: 20%;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  align-self: center;
+}
+
+@media (min-width: 800px) {
+  .social {
+    width: 20%;
+    align-self: auto;
+  }
+}
