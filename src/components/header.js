@@ -12,11 +12,11 @@ const Navigation = ({ className }) => (
     <Link className={styles.link} to="/">
       Manufaktur
     </Link>
-    <Link className={styles.link} to="/catering">
+    <AnchorLink className={styles.link} to="/#catering">
       Catering
-    </Link>
+    </AnchorLink>
     <AnchorLink className={styles.link} to="/#about">
-      About / Contact
+      Kontakt
     </AnchorLink>
   </div>
 );

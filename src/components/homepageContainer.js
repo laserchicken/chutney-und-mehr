@@ -14,8 +14,8 @@ export default function HomepageContainer() {
       <Masthead />
       <Intro />
       <Tiles />
-      <About />
       <Catering />
+      <About />
       <Footer />
     </div>
   );

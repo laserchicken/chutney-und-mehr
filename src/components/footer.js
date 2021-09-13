@@ -1,6 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import Logo from "../icons/logo-footer.inline.svg";
+import Logo from "../icons/logo-combined.inline.svg";
 import * as styles from "./footer.module.css";
 
 export default function Footer() {

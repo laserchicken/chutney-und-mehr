@@ -19,45 +19,56 @@
   font-weight: 200;
   letter-spacing: 6px;
   margin-top: 4rem;
-  margin-bottom: 6rem;
-}
-
-@media (min-width: 800px) {
-  .header {
-    font-size: 3.2rem;
-  }
-}
-
-.separated {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .subheader {
-  font-size: 2.1rem;
+  font-size: 1.5rem;
+  margin-top: 4rem;
   margin-bottom: 4rem;
   font-weight: 700;
   line-height: 2;
 }
 
-.copyIntro {
-  font-size: 1.7rem;
-  line-height: 1.8;
-  font-weight: 500;
+@media (min-width: 800px) {
+  .subheader {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+  }
 }
 
-.copySubintro {
-  font-size: 1.5rem;
-  line-height: 1.8;
-  font-weight: 500;
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 85vw;
 }
 
-.copy {
-  font-size: 1.4rem;
+@media (min-width: 800px) {
+  .textWrapper {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+  }
+}
+
+.textBlock {
+  padding: 1rem;
+  width: 100%;
+  font-size: 1.1rem;
   line-height: 1.8;
   font-weight: 300;
 }
 
+@media (min-width: 800px) {
+  .textBlock {
+    width: 50%;
+  }
+}
+
 .separator {
-  width: 50vw;
-  border-bottom: 1px solid black;
+  width: 70vw;
+  border-bottom: 2px solid black;
 }

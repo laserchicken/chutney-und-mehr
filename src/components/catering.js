@@ -6,7 +6,7 @@ import * as styles from "./catering.module.css";
 
 export default function Catering() {
   return (
-    <div className={styles.wrapper}>
+    <div id="catering" className={styles.wrapper}>
       <div className={styles.header}>CATERING</div>
       <CateringLogo className={styles.cateringLogo} />
       <div className={styles.imageWrapper}>
