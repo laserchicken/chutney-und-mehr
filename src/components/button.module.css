@@ -23,6 +23,6 @@
 @media (min-width: 800px) {
   .button {
     width: 25vw;
-    font-size: calc(.3rem + 1vw);
+    font-size: calc(.1rem + 1vw);
   }
 }

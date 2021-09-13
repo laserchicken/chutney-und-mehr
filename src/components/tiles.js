@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import TitleTile from "./titleTile";
 import ImageTile from "./imageTile";
+import Button from "./button";
 import { Link } from "gatsby";
+import chutneyundmehrDarstellung from "../downloads/chutneyundmehr-darstellung.pdf";
 import * as styles from "./tiles.module.css";
 import * as tileStyles from "./tile.module.css";
 
@@ -124,6 +126,9 @@ export default function Tiles() {
         <ImageTile image={"cherries"} className={styles.hiddenOnMobile} />
         <ImageTile image={"cherryChutney"} />
       </Link>
+      <div className={styles.ctaWrapper}>
+        <Button text="CHUTNEY DARSTELLUNG" file={chutneyundmehrDarstellung} />
+      </div>
     </div>
   );
 }

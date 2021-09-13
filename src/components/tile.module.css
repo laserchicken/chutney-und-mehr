@@ -117,6 +117,10 @@ h3 {
   background: #CC98B0;
 }
 
+.green {
+  background: #687C32;
+}
+
 .image {
   background-size: cover;
   background-position: 50% 50%;
@@ -168,6 +172,10 @@ h3 {
 
 .cherryChutney {
   background-image: url(../images/cherry-chutney.png);  
+}
+
+.glas {
+  background-image: url(../images/glas.jpg);  
 }
 
 .separator {

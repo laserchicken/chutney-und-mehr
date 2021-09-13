@@ -33,7 +33,7 @@ export default function ProductSubpageContainer({
       />
       <ProductsSelection />
       <div className={styles.ctaWrapper}>
-        <Button text="pdf download" file={chutneyundmehrDarstellung} />
+        <Button text="CHUTNEY DARSTELLUNG" file={chutneyundmehrDarstellung} />
       </div>
       <Footer />
     </div>

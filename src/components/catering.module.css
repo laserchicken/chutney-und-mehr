@@ -20,65 +20,65 @@
   text-align: center;
 }
 
-.cateringLogo {
-  margin: 0 2rem;
-  width: 25rem;
-}
-
-.imageWrapper {
-  position: relative;
-  height: 50vh;
-  width: 100vw;
-  max-width: 100%; /*https://stackoverflow.com/a/30489928*/
-}
-
-@media (min-width: 1000px) {
-  .imageWrapper {
-    height: 80vh;
-  }
-}
-
-.image {
-  background-size: cover;
-  background-position: 50% 50%;
-  background-image: url(../images/catering-plate.png);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  height: 60vw;
-  width: 60vw;
+.textWrapper {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 85vw;
 }
 
 @media (min-width: 800px) {
-  .image {
-    height: 40rem;
-    width: 40rem;
+  .textWrapper {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
   }
 }
 
-.rectangle {
-  background: #687C32;
+.textBlock {
+  padding: 1rem;
   width: 100%;
-  height: 40%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  font-weight: 300;
 }
 
-@media (min-width: 1000px) {
-  .rectangle {
-    height: 50%;
+@media (min-width: 800px) {
+  .textBlock {
+    width: 50%;
   }
 }
 
-@media (min-width: 1400px) {
-  .rectangle {
-    height: 60%;
+.separator {
+  width: 70vw;
+  border-bottom: 2px solid black;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.rowReverse {
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 800px) {
+  .row {
+    flex-direction: row;
   }
 }
 
-.ctaWrapper {
-  z-index: 300;
+.oneHalf {
+  width: 100vw;
+  height: 50vh;
+}
+
+@media (min-width: 1200px) {
+  .oneHalf {
+    width: 50vw;
+  }
 }

@@ -41,6 +41,7 @@ export default function ProductTile({ image, header, backgroundColor }) {
           header={header}
           backgroundColor={backgroundColor}
           styles={styles}
+          button={false}
         />
       ) : (
         <ImageTile className={styles.tile} image={image} />
