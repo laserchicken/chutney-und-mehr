@@ -1,7 +1,12 @@
 import React from "react";
 import Logo from "../icons/logo-text.inline.svg";
 
-export default function TitleTile({ header, backgroundColor, styles }) {
+export default function TitleTile({
+  header,
+  backgroundColor,
+  hovered,
+  styles,
+}) {
   return (
     <div className={`${styles.tile} ${styles[backgroundColor]}`}>
       <div className={`${styles.textWrapper} ${styles.uppercase}`}>
@@ -10,7 +15,9 @@ export default function TitleTile({ header, backgroundColor, styles }) {
           dangerouslySetInnerHTML={{ __html: header }}
         ></h1>
         <div className={styles.separator}></div>
-        <div className={styles.button}>aussehen</div>
+        <div className={`${styles.button} ${hovered ? styles.hovered : ""}`}>
+          aussehen
+        </div>
       </div>
     </div>
   );

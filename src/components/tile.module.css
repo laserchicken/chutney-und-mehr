@@ -237,7 +237,7 @@ h3 {
   }
 }
 
-.button:hover {
+.hovered {
   background: black;
   color: white;
 }
