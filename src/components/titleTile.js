@@ -10,7 +10,7 @@ export default function TitleTile({ header, backgroundColor, styles }) {
           dangerouslySetInnerHTML={{ __html: header }}
         ></h1>
         <div className={styles.separator}></div>
-        <Logo className={styles.logo} />
+        <div className={styles.button}>aussehen</div>
       </div>
     </div>
   );
