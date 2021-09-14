@@ -13,40 +13,25 @@
 .content {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 5rem;
+  align-items: center;
+  margin: 5rem;
   width: 100vw;
   text-align: center;
+  justify-content: center;
 }
 
 @media (min-width: 800px) {
   .content {
-    padding: 0;
-    margin: 3vw;
-    width: 50vw;
-    text-align: left;
-  }
-}
-
-@media (min-width: 1400px) {
-  .content {
+    width: 40vw;
     margin: 0;
-    padding: 5vw;
-  }
-}
-
-@media (min-width: 1600px) {
-  .content {
-    padding: 8rem;
   }
 }
 
 .image {
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: top;
   background-image: url(../images/jarek.png);
-  width: 100vw;
-  height: 100vh;
+  height: 70vh;
 }
 
 @media (min-width: 800px) {
@@ -59,39 +44,37 @@
 .header {
   font-size: 2.5rem;
   font-weight: 200;
-  letter-spacing: 6px;
   margin-bottom: 3rem;
 }
 
 @media (min-width: 800px) {
   .header {
-    font-size: 2.8vw;
+    font-size: 1.7rem;
   }
 }
 
 @media (min-width: 1400px) {
   .header {
-    font-size: 3.2rem;
+    font-size: 2.5rem;
   }
 }
 
 .contact {
-  margin-top: 1.7rem;
+  margin-top: 6rem;
   font-size: 1.5rem;
-  font-weight: 500;
   margin-bottom: 3rem;
 }
 
-
 @media (min-width: 800px) {
   .contact {
-    font-size: 1.5vw;
+    margin-top: 1.7rem;
+    font-size: 1.3vw;
   }
 }
 
 @media (min-width: 1400px) {
   .contact {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -105,26 +88,9 @@
   margin-bottom: 1.5rem
 }
 
-.aboutTextIntro {
-  font-size: 1.7rem;
-  margin-bottom: 1.5rem;
-}
-
-@media (min-width: 800px) {
-  .aboutTextIntro {
-    font-size: 1.5vw;
-  }
-}
-
-@media (min-width: 1400px) {
-  .aboutTextIntro {
-    font-size: 1.7rem;
-  }
-}
-
 .aboutText {
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 200;
 }
 
 @media (min-width: 800px) {
@@ -146,19 +112,13 @@
 
 @media (min-width: 800px) {
   .logo {
-    width: 20vw;
-  }
-}
-
-@media (min-width: 1400px) {
-  .logo {
-    width: 23rem;
+    width: 16vw;
   }
 }
 
 .contact a {
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 200;
 }
 
 .phone, .address {
@@ -168,14 +128,35 @@
 
 .social {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 40%;
   align-self: center;
 }
 
 @media (min-width: 800px) {
   .social {
+    justify-content: space-between;
     width: 20%;
     align-self: auto;
   }
+}
+
+.separator {
+  width: 70vw;
+  border-bottom: 2px solid black;
+}
+
+.sectionHeader {
+  font-size: 2.5rem;
+  font-weight: 200;
+  letter-spacing: 6px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.sectionWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
