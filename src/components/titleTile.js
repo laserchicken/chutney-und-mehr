@@ -7,23 +7,31 @@ export default function TitleTile({
   backgroundColor,
   hovered,
   className,
-  button = true,
+  button,
   styles,
 }) {
   return (
     <div className={`${styles.tile} ${styles[backgroundColor]} ${className}`}>
-      <div className={`${styles.textWrapper} ${styles.uppercase}`}>
+      <div className={`${styles.textWrapper} `}>
         <h1
-          className={`${styles.header} ${styles.spread}`}
+          className={`${styles.header} ${styles.spread} ${styles.uppercase}`}
           dangerouslySetInnerHTML={{ __html: header }}
         ></h1>
         <div className={styles.separator}></div>
+        <div
+          className={styles.subheader}
+          dangerouslySetInnerHTML={{ __html: subheader }}
+        ></div>
         {button ? (
-          <div className={`${styles.button} ${hovered ? styles.hovered : ""}`}>
-            aussehen
+          <div
+            className={`${styles.button} ${styles.uppercase} ${
+              hovered ? styles.hovered : ""
+            }`}
+          >
+            {button}
           </div>
         ) : (
-          <Logo />
+          <Logo className={styles.logo} />
         )}
       </div>
     </div>

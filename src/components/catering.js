@@ -58,49 +58,60 @@ export default function Catering() {
           <ImageTile image={"glas"} className={styles.oneHalf} />
           <TitleTile
             header={"glas"}
-            subheader={"glas"}
+            subheader={
+              "GRÜNES ERBSENMOUSSE I RÄUCHERLACHS<br/>griechischer joghurt I mandelblättchen I dill"
+            }
             backgroundColor={"green"}
             hovered={hovered === "glas"}
             className={styles.oneHalf}
             styles={tileStyles}
+            button={"menu"}
           />
         </Link>
         <Link
           className={`${styles.row} ${styles.rowReverse}}`}
           to="/tomaten-mango-chutney"
           onMouseEnter={(_) => {
-            setHovered("tomatenMango");
+            setHovered("fingerfood");
           }}
           onMouseLeave={(_) => {
             setHovered(null);
           }}
         >
           <TitleTile
-            header={"tomaten<br>mango<br>chutney"}
-            backgroundColor={"tomatenMango"}
-            hovered={hovered === "tomatenMango"}
+            header={"fingerfood"}
+            backgroundColor={"green"}
+            subheader={
+              "ROTE ZWIEBEL-CHUTNEY I FETA<br/> muffins aus filo-teig I schnittlauch"
+            }
+            hovered={hovered === "fingerfood"}
             styles={tileStyles}
             className={styles.oneHalf}
+            button={"menu"}
           />
-          <ImageTile image={"tomatenMangoChutney"} className={styles.oneHalf} />
+          <ImageTile image={"fingerfood"} className={styles.oneHalf} />
         </Link>
         <Link
           className={`${styles.row}`}
           to="/rote-zwiebel-chutney-mit-haselnussen"
           onMouseEnter={(_) => {
-            setHovered("redOnion");
+            setHovered("salad");
           }}
           onMouseLeave={(_) => {
             setHovered(null);
           }}
         >
-          <ImageTile image={"redOnionsChutney"} className={styles.oneHalf} />
+          <ImageTile image={"salat"} className={styles.oneHalf} />
           <TitleTile
-            header={"rote zwiebel<br>chutney<br>mit haselnüssen"}
-            backgroundColor={"redOnion"}
-            hovered={hovered === "redOnion"}
+            header={"SALATSCHÜSSEL"}
+            subheader={
+              "ZUCCHINI I ROQUEFORT<br/>dunkle weintrauben I radieschen I walnüsse I petersilie"
+            }
+            backgroundColor={"green"}
+            hovered={hovered === "salad"}
             className={styles.oneHalf}
             styles={tileStyles}
+            button={"menu"}
           />
         </Link>
       </div>

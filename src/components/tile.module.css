@@ -159,23 +159,31 @@ h3 {
 }
 
 .redOnionsChutney {
-  background-image: url(../images/red-onions-chutney.png);  
+  background-image: url(../images/red-onions-chutney.png);
 }
 
 .chilyMarmelade {
-  background-image: url(../images/chily-marmelade.png);  
+  background-image: url(../images/chily-marmelade.png);
 }
 
 .appleChutney {
-  background-image: url(../images/apple-chutney.png);  
+  background-image: url(../images/apple-chutney.png);
 }
 
 .cherryChutney {
-  background-image: url(../images/cherry-chutney.png);  
+  background-image: url(../images/cherry-chutney.png);
 }
 
 .glas {
-  background-image: url(../images/glas.jpg);  
+  background-image: url(../images/glas.jpg);
+}
+
+.fingerfood {
+  background-image: url(../images/fingerfood.jpg);
+}
+
+.salat {
+  background-image: url(../images/salat.jpg);
 }
 
 .separator {
@@ -248,4 +256,8 @@ h3 {
 .hovered {
   background: black;
   color: white;
+}
+
+.subheader {
+  margin-top: 2rem;
 }

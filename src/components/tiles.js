@@ -29,6 +29,7 @@ export default function Tiles() {
           backgroundColor={"plum"}
           hovered={hovered === "plum"}
           styles={tileStyles}
+          button={"aussehen"}
         />
       </Link>
       <Link
@@ -47,6 +48,7 @@ export default function Tiles() {
           backgroundColor={"tomatenMango"}
           hovered={hovered === "tomatenMango"}
           styles={tileStyles}
+          button={"aussehen"}
         />
         <ImageTile image={"mango"} className={styles.hiddenOnMobile} />
       </Link>
@@ -65,6 +67,7 @@ export default function Tiles() {
           backgroundColor={"redOnion"}
           hovered={hovered === "redOnion"}
           styles={tileStyles}
+          button={"aussehen"}
         />
         <ImageTile image={"redOnions"} className={styles.hiddenOnMobile} />
         <ImageTile image={"redOnionsChutney"} />
@@ -86,6 +89,7 @@ export default function Tiles() {
           hovered={hovered === "chily"}
           backgroundColor={"chily"}
           styles={tileStyles}
+          button={"aussehen"}
         />
       </Link>
       <Link
@@ -104,6 +108,7 @@ export default function Tiles() {
           hovered={hovered === "apple"}
           backgroundColor={"apple"}
           styles={tileStyles}
+          button={"aussehen"}
         />
         <ImageTile image={"apples"} className={styles.hiddenOnMobile} />
       </Link>
@@ -122,6 +127,7 @@ export default function Tiles() {
           hovered={hovered === "cherry"}
           backgroundColor={"cherry"}
           styles={tileStyles}
+          button={"aussehen"}
         />
         <ImageTile image={"cherries"} className={styles.hiddenOnMobile} />
         <ImageTile image={"cherryChutney"} />

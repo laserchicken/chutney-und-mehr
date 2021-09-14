@@ -35,7 +35,7 @@ export default function ProductTile({ image, header, backgroundColor }) {
         setHovered(false);
       }}
     >
-      {hovered && windowDimensions.width > 1200 ? (
+      {!hovered && windowDimensions.width > 1200 ? (
         <TitleTile
           className={styles.tile}
           header={header}
