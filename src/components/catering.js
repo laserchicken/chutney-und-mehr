@@ -1,25 +1,58 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ImageGallery from "react-image-gallery";
 import Button from "./button";
 import chutneyundmehrMenu from "../downloads/chutneyundmehr-menu.pdf";
-import salat from "../images/salat.jpg";
-import fingerfood from "../images/fingerfood.jpg";
-import glas from "../images/glas.jpg";
+import catering1 from "../images/catering1.jpg";
+import catering2 from "../images/catering2.jpg";
+import catering3 from "../images/catering3.jpg";
+import catering4 from "../images/catering4.jpg";
+import catering5 from "../images/catering5.jpg";
+import catering6 from "../images/catering6.jpg";
+import catering7 from "../images/catering7.jpg";
+import catering8 from "../images/catering8.jpg";
 import * as styles from "./catering.module.css";
+
+const NARROW_SCREEN_THRESHOLD = 1200;
+
+function getWindowWidth() {
+  const { innerWidth: width } = window;
+  return width;
+}
 
 const images = [
   {
-    original: glas,
+    original: catering1,
   },
   {
-    original: fingerfood,
+    original: catering2,
   },
   {
-    original: salat,
+    original: catering3,
+  },
+  {
+    original: catering4,
+  },
+  {
+    original: catering5,
+  },
+  {
+    original: catering6,
+  },
+  {
+    original: catering7,
+  },
+  {
+    original: catering8,
   },
 ];
 
 export default function Catering() {
+  const [isNarrowScreen, setIsNarrowScreen] = useState();
+
+  useEffect(() => {
+    setIsNarrowScreen(getWindowWidth() <= NARROW_SCREEN_THRESHOLD);
+  });
+
   return (
     <div id="catering" className={styles.wrapper}>
       <div className={styles.content}>
@@ -57,14 +90,21 @@ export default function Catering() {
           </p>
         </div>
       </div>
-      <ImageGallery
-        showFullscreenButton={false}
-        additionalClass={styles.gallery}
-        showPlayButton={false}
-        slideDuration={0}
-        slideInterval={2000}
-        items={images}
-      />
+      {isNarrowScreen !== undefined && (
+        <ImageGallery
+          showFullscreenButton={false}
+          additionalClass={styles.gallery}
+          useTranslate3D={false}
+          autoPlay={!isNarrowScreen}
+          showPlayButton={false}
+          slideDuration={0}
+          slideInterval={3000}
+          stopPropagation
+          items={images}
+          showNav={false}
+          showBullets
+        />
+      )}
       <div className={styles.ctaWrapper}>
         <Button text="MENU" file={chutneyundmehrMenu} />
       </div>

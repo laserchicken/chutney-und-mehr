@@ -31,6 +31,8 @@
 }
 
 .gallery button:hover {
+  background: darkgrey !important;
+  border: 1px solid black !important;
   color: darkgrey;
 }
 
@@ -40,6 +42,7 @@
   text-align: center;
   justify-content: center;
   width: 85vw;
+  margin-top: 4rem;
 }
 
 @media (min-width: 800px) {
