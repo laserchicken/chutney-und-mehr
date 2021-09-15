@@ -35,7 +35,9 @@ export default function ProductTile({ image, header, backgroundColor }) {
         setHovered(false);
       }}
     >
-      {!hovered && windowDimensions.width > 1200 ? (
+      {windowDimensions.width <= 1200 || !hovered ? (
+        <ImageTile className={styles.tile} image={image} />
+      ) : (
         <TitleTile
           className={styles.tile}
           header={header}
@@ -43,8 +45,6 @@ export default function ProductTile({ image, header, backgroundColor }) {
           styles={styles}
           button={false}
         />
-      ) : (
-        <ImageTile className={styles.tile} image={image} />
       )}
     </div>
   );
