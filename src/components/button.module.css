@@ -9,6 +9,7 @@
   align-items: center;
   color: white;
   text-transform: uppercase;
+  text-align: center;
   letter-spacing: 3.6px;
   font-size: calc(.5rem + 1vw);
   text-decoration: none;
