@@ -25,7 +25,7 @@ export default function Tiles() {
         <ImageTile image={"plums"} className={styles.hiddenOnMobile} />
         <ImageTile image={"plumsChutney"} />
         <TitleTile
-          header={"pflaumen<br>chutney<br>mit walnüssen"}
+          header={"pflaumen-<br>chutney<br>mit walnüssen"}
           backgroundColor={"plum"}
           hovered={hovered === "plum"}
           styles={tileStyles}
@@ -44,7 +44,7 @@ export default function Tiles() {
       >
         <ImageTile image={"tomatenMangoChutney"} />
         <TitleTile
-          header={"tomaten<br>mango<br>chutney"}
+          header={"tomaten-<br>mango<br>chutney"}
           backgroundColor={"tomatenMango"}
           hovered={hovered === "tomatenMango"}
           styles={tileStyles}
@@ -63,7 +63,7 @@ export default function Tiles() {
         }}
       >
         <TitleTile
-          header={"rote zwiebel<br>chutney<br>mit haselnüssen"}
+          header={"rote zwiebel-<br>chutney<br>mit haselnüssen"}
           backgroundColor={"redOnion"}
           hovered={hovered === "redOnion"}
           styles={tileStyles}
@@ -85,7 +85,7 @@ export default function Tiles() {
         <ImageTile image={"chilies"} className={styles.hiddenOnMobile} />
         <ImageTile image={"chilyMarmelade"} />
         <TitleTile
-          header={"chili<br>marmelade"}
+          header={"chili-<br>marmelade"}
           hovered={hovered === "chily"}
           backgroundColor={"chily"}
           styles={tileStyles}
@@ -123,7 +123,7 @@ export default function Tiles() {
         }}
       >
         <TitleTile
-          header={"schatten-<br>morellen<br>chutney<br>mit meerrettich"}
+          header={"schatten-<br>morellen-<br>chutney<br>mit meerrettich"}
           hovered={hovered === "cherry"}
           backgroundColor={"cherry"}
           styles={tileStyles}

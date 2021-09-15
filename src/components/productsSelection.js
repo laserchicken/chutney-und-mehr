@@ -14,14 +14,14 @@ export default function ProductsSelection() {
           <Link className={styles.link} to="/pflaumen-chutney-mit-walnussen">
             <ProductTile
               image={"plumsChutney"}
-              header={"pflaumen<br>chutney<br>mit walnüssen"}
+              header={"pflaumen-<br>chutney<br>mit walnüssen"}
               backgroundColor={"plum"}
             />
           </Link>
           <Link className={styles.link} to="/tomaten-mango-chutney">
             <ProductTile
               image={"tomatenMangoChutney"}
-              header={"tomaten<br>mango<br>chutney"}
+              header={"tomaten-<br>mango<br>chutney"}
               backgroundColor={"tomatenMango"}
             />
           </Link>
@@ -31,14 +31,14 @@ export default function ProductsSelection() {
           >
             <ProductTile
               image={"redOnionsChutney"}
-              header={"rote zwiebel<br>chutney<br>mit haselnüssen"}
+              header={"rote zwiebel-<br>chutney<br>mit haselnüssen"}
               backgroundColor={"redOnion"}
             />
           </Link>
           <Link className={styles.link} to="/chili-marmelade">
             <ProductTile
               image={"chilyMarmelade"}
-              header={"chili<br>marmelade"}
+              header={"chili-<br>marmelade"}
               backgroundColor={"chily"}
             />
           </Link>
@@ -55,7 +55,7 @@ export default function ProductsSelection() {
           >
             <ProductTile
               image={"cherryChutney"}
-              header={"schatten-<br>morellen<br>chutney<br>mit meerrettich"}
+              header={"schatten-<br>morellen-<br>chutney<br>mit meerrettich"}
               backgroundColor={"cherry"}
             />
           </Link>

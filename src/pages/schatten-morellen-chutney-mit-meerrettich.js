@@ -10,7 +10,7 @@ export default function SchattenMorellenChutneyMitMeerrettich() {
       <ProductSubpageContainer
         theme="cherries"
         backgroundColor="cherry"
-        header="schatten-<br>morellen<br>chutney<br>mit meerrettich"
+        header="schatten-<br>morellen-<br>chutney<br>mit meerrettich"
         image="cherryChutney"
         subheader="<b>100% vegan | ℮ 145 gramm</b>"
         contents="<b>ZUTATEN</b>:<br/>Schattenmorellen 70%, brauner Zucker 10%, Meerrettich frisch, , Balsamico Esig Bianco, Balsamino Essig, Steinsalz, Zimt, Wasabi Pulver, Gewürznelken."

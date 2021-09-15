@@ -10,7 +10,7 @@ export default function ChiliMarmelade() {
       <ProductSubpageContainer
         theme="chilies"
         backgroundColor="chily"
-        header="chili<br>marmelade"
+        header="chili-<br>marmelade"
         image="chilyMarmelade"
         subheader="<b>vegetarisch | ℮ 145 gramm</b>"
         contents="<b>ZUTATEN</b>:<br/>BIO-Gelierzucker 41%, Chili frisch 26%, Reisessig, Ingwer frisch, Limetten, Fischsoße, Knoblauch, Koriander, Limetten blätter."

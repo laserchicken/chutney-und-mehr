@@ -10,7 +10,7 @@ export default function PflaumenChutneyMitWalnussen() {
       <ProductSubpageContainer
         theme="plums"
         backgroundColor="plum"
-        header="pflaumen<br>chutney<br>mit walnüssen"
+        header="pflaumen-<br>chutney<br>mit walnüssen"
         image="plumsChutney"
         subheader="<b>100% vegan | ℮ 145 gramm</b>"
         contents="<b>ZUTATEN</b>:<br/>Pflaumen 61%, brauner Zucker 9%, rote Zwiebeln, Walnüsse, BIO Zitronen, Getrocknete Pflaumen, Balsamico Essig, Rapsöl, Steinsalz, Sultaninen, Ingwer frisch, Cumin, Gewürznelken, Zimt, Cayennpfeffer."

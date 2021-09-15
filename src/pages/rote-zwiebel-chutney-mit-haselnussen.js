@@ -10,7 +10,7 @@ export default function RoteZwiebelChutneyMitHaselnussen() {
       <ProductSubpageContainer
         theme="redOnions"
         backgroundColor="redOnion"
-        header="rote zwiebel<br>chutney<br>mit haselnüssen"
+        header="rote zwiebel-<br>chutney<br>mit haselnüssen"
         image="redOnionsChutney"
         subheader="<b>100% vegan | ℮ 145 gramm</b>"
         contents="<b>ZUTATEN</b>:<br/>Rote Zwiebeln 55%, Rotwein 11%, Rübenzucker 8,3% Getrocknete Pflaumen, Balsamico-Essig, Haselnüsse, Olivenöl, Tomatenmark, Steinsalz,  Pfeffer Schwarz, Thymian frisch, Kreuzkümmel, Chili."
