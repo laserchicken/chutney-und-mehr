@@ -4,7 +4,7 @@ module.exports = {
       "Wahl des Chutneys und catering | CHUTNEY UND MEHR Manufaktur und Catering",
     description:
       "Eine Geschmacksfülle in einem kleinen Glas. Ich bereite pikante, süße und saure Chutneys mit Obst- und Gemüsestücken nach meinen eigenen Rezepten zu, ohne künstliche Zusatzstoffe oder Konservierungsmittel. ",
-    url: "https://test-chutney.onrender.com", // No trailing slash!
+    url: "https://chutneyundmehr.de", // No trailing slash!
     image: "/meta-logo.png",
   },
   plugins: [
