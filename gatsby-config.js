@@ -1,15 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: "Chutney und mehr",
-    description: "Description ",
-    url: "http://www.chutneyundmehr.de", // No trailing slash!
+    title:
+      "Wahl des Chutneys und catering | CHUTNEY UND MEHR Manufaktur und Catering",
+    description:
+      "Eine Geschmacksfülle in einem kleinen Glas. Ich bereite pikante, süße und saure Chutneys mit Obst- und Gemüsestücken nach meinen eigenen Rezepten zu, ohne künstliche Zusatzstoffe oder Konservierungsmittel. ",
+    url: "https://chutneyundmehr.de", // No trailing slash!
     image: "/images/icon.jpg",
   },
   plugins: [
     `gatsby-transformer-json`,
     `gatsby-plugin-react-helmet`,
-    //    `gatsby-plugin-sharp`,
-    //    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
