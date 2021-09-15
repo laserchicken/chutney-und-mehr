@@ -10,6 +10,14 @@
 }
 
 .artwork {
-  width: 30rem;
+  width: 25rem;
+  height: 25rem;
   fill: white;
+}
+
+@media (min-width: 800px) {
+  .artwork {
+    width: 35rem;
+    height: 35rem;
+  }
 }
