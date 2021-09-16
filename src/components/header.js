@@ -8,15 +8,23 @@ import Burger from "../icons/burger.inline.svg";
 import Social from "./social";
 import * as styles from "./header.module.css";
 
-const Navigation = ({ className }) => (
+const Navigation = ({ className, onClick }) => (
   <div className={`${styles.navigationCommon} ${className}`}>
     <Link className={styles.link} to="/">
       Manufaktur
     </Link>
-    <AnchorLink className={styles.link} to="/#catering">
+    <AnchorLink
+      className={styles.link}
+      to="/#catering"
+      onAnchorLinkClick={onClick}
+    >
       Catering
     </AnchorLink>
-    <AnchorLink className={styles.link} to="/#about">
+    <AnchorLink
+      className={styles.link}
+      to="/#kontakt"
+      onAnchorLinkClick={onClick}
+    >
       Kontakt
     </AnchorLink>
   </div>
@@ -55,7 +63,12 @@ export default function Header() {
           <div
             className={burgerMenuExpanded ? styles.expanded : styles.collapsed}
           >
-            <Navigation className={styles.navigationWrapperMobile} />
+            <Navigation
+              className={styles.navigationWrapperMobile}
+              onClick={() => {
+                setBurgerMenuExpanded(false);
+              }}
+            />
             <Social className={styles.socialWrapperMobile} />
           </div>
         </header>

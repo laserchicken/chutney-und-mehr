@@ -5,10 +5,10 @@ import * as styles from "./about.module.css";
 
 export default function About() {
   return (
-    <div className={styles.sectionWrapper}>
+    <div id="kontakt" className={styles.sectionWrapper}>
       <div className={styles.sectionHeader}>KONTAKT</div>
       <div className={styles.separator} />
-      <div id="about" className={styles.wrapper}>
+      <div className={styles.wrapper}>
         <div className={styles.image}></div>
         <div className={styles.content}>
           <div>
