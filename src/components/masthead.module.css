@@ -1,18 +1,21 @@
 .masthead {
+  position: relative;
+}
+
+.image {
   height: 90vh;
-  color: transparent;
-  background-image: url(../images/bg.png);
-  background-size: cover;
-  background-position: 50% 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .artwork {
   width: 25rem;
   height: 25rem;
   fill: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 @media (min-width: 800px) {

@@ -10,6 +10,9 @@ module.exports = {
   plugins: [
     `gatsby-transformer-json`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -28,12 +31,6 @@ module.exports = {
         rule: {
           include: /\.inline\.svg$/,
         },
-      },
-    },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        icon: `src/images/favicon.png`,
       },
     },
     {
