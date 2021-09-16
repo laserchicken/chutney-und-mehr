@@ -97,7 +97,7 @@ export default function Catering() {
           useTranslate3D={false}
           autoPlay={!isNarrowScreen}
           showPlayButton={false}
-          slideDuration={0}
+          slideDuration={!isNarrowScreen ? 0 : 450}
           slideInterval={3000}
           stopPropagation
           items={images}
