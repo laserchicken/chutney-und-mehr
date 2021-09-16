@@ -8,9 +8,9 @@ export default function Masthead() {
     <div className={styles.masthead}>
       <StaticImage
         className={styles.image}
-        fullWidth
+        layout="fullWidth"
         quality={100}
-        loading={"eager"}
+        loading="eager"
         src="../images/bg.png"
         alt="chutney und mehr"
       />
