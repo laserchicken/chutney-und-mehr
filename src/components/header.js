@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "gatsby";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import Sticky from "react-stickynode";
+import OutsideClickHandler from "react-outside-click-handler";
 import Logo from "../icons/logo-text.inline.svg";
 import Burger from "../icons/burger.inline.svg";
 import Social from "./social";
@@ -26,31 +27,39 @@ export default function Header() {
 
   return (
     <Sticky innerZ={500} enabled={true}>
-      <header className={styles.header}>
-        <div className={styles.content}>
-          <Navigation className={styles.navigationWrapper} />
-          <div className={styles.logo}>
-            <Link to="/">
-              <Logo />
-            </Link>
+      <OutsideClickHandler
+        onOutsideClick={() => {
+          if (burgerMenuExpanded) {
+            setBurgerMenuExpanded(false);
+          }
+        }}
+      >
+        <header className={styles.header}>
+          <div className={styles.content}>
+            <Navigation className={styles.navigationWrapper} />
+            <div className={styles.logo}>
+              <Link to="/">
+                <Logo />
+              </Link>
+            </div>
+            <div className={styles.burger}>
+              <Burger
+                onClick={() => {
+                  setBurgerMenuExpanded(!burgerMenuExpanded);
+                }}
+                className={styles.icon}
+              />
+            </div>
+            <Social className={styles.socialWrapper} />
           </div>
-          <div className={styles.burger}>
-            <Burger
-              onClick={() => {
-                setBurgerMenuExpanded(!burgerMenuExpanded);
-              }}
-              className={styles.icon}
-            />
+          <div
+            className={burgerMenuExpanded ? styles.expanded : styles.collapsed}
+          >
+            <Navigation className={styles.navigationWrapperMobile} />
+            <Social className={styles.socialWrapperMobile} />
           </div>
-          <Social className={styles.socialWrapper} />
-        </div>
-        <div
-          className={burgerMenuExpanded ? styles.expanded : styles.collapsed}
-        >
-          <Navigation className={styles.navigationWrapperMobile} />
-          <Social className={styles.socialWrapperMobile} />
-        </div>
-      </header>
+        </header>
+      </OutsideClickHandler>
     </Sticky>
   );
 }
