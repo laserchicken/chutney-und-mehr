@@ -39,12 +39,5 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: `gatsby-plugin-anchor-links`,
-      options: {
-        duration: 1500,
-        offset: -100,
-      },
-    },
   ],
 };

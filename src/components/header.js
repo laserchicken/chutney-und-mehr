@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
 import Sticky from "react-stickynode";
 import OutsideClickHandler from "react-outside-click-handler";
 import Logo from "../icons/logo-text.inline.svg";
@@ -10,23 +9,15 @@ import * as styles from "./header.module.css";
 
 const Navigation = ({ className, onClick }) => (
   <div className={`${styles.navigationCommon} ${className}`}>
-    <Link className={styles.link} to="/">
+    <Link className={styles.link} to="/" onClick={onClick}>
       Manufaktur
     </Link>
-    <AnchorLink
-      className={styles.link}
-      to="/#catering"
-      onAnchorLinkClick={onClick}
-    >
+    <Link className={styles.link} to="/#catering" onClick={onClick}>
       Catering
-    </AnchorLink>
-    <AnchorLink
-      className={styles.link}
-      to="/#kontakt"
-      onAnchorLinkClick={onClick}
-    >
+    </Link>
+    <Link className={styles.link} to="/#kontakt" onClick={onClick}>
       Kontakt
-    </AnchorLink>
+    </Link>
   </div>
 );
 
@@ -50,13 +41,13 @@ export default function Header() {
                 <Logo />
               </Link>
             </div>
-            <div className={styles.burger}>
-              <Burger
-                onClick={() => {
-                  setBurgerMenuExpanded(!burgerMenuExpanded);
-                }}
-                className={styles.icon}
-              />
+            <div
+              className={styles.burger}
+              onClick={() => {
+                setBurgerMenuExpanded(!burgerMenuExpanded);
+              }}
+            >
+              <Burger className={styles.icon} />
             </div>
             <Social className={styles.socialWrapper} />
           </div>
