@@ -15,7 +15,7 @@ export default function About() {
             <div className={styles.header}>
               Hallo,
               <br />
-              ich bin Jaroslaw.
+              ich bin Jarek.
             </div>
             <div>
               <div className={styles.aboutText}>Willkommen in meiner Welt.</div>

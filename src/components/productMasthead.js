@@ -4,6 +4,11 @@ import * as styles from "./productMasthead.module.css";
 
 export default function ProductMasthead({ image }) {
   return (
-    <GatsbyImage loading="eager" className={styles.masthead} image={image} />
+    <GatsbyImage
+      loading="eager"
+      alt=""
+      className={styles.masthead}
+      image={image}
+    />
   );
 }
