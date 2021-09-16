@@ -1,14 +1,20 @@
 import React from "react";
 import Layout from "../components/layout";
+import { graphql } from "gatsby";
+import { getImage } from "gatsby-plugin-image";
 import Seo from "../components/seo";
 import ProductSubpageContainer from "../components/productSubpageContainer";
 
-export default function TomatenMangoChutney() {
+export default function TomatenMangoChutney({ data }) {
+  const image = data.allFile.edges.find((image) => {
+    return image.node.base.startsWith("mango");
+  });
+
   return (
     <Layout>
       <Seo />
       <ProductSubpageContainer
-        theme="mango"
+        mastheadImage={getImage(image.node)}
         backgroundColor="tomatenMango"
         header="tomaten-mango<br>chutney"
         image="tomatenMangoChutney"
@@ -34,3 +40,18 @@ export default function TomatenMangoChutney() {
     </Layout>
   );
 }
+
+export const pageQuery = graphql`
+  query {
+    allFile(filter: { relativeDirectory: { eq: "product" } }) {
+      edges {
+        node {
+          base
+          childImageSharp {
+            gatsbyImageData(layout: FULL_WIDTH, quality: 100)
+          }
+        }
+      }
+    }
+  }
+`;
