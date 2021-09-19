@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
@@ -9,12 +10,21 @@ export default function TomatenMangoChutney({ data }) {
   const image = data.allFile.edges.find((image) => {
     return image.node.base.startsWith("mango");
   });
+  const imageObject = getImage(image.node);
 
   return (
     <Layout>
+      <Helmet>
+        <link
+          rel="preload"
+          as="image"
+          imagesrcset={imageObject.images.sources[0].srcSet}
+          imagesizes="100vw"
+        />
+      </Helmet>
       <Seo />
       <ProductSubpageContainer
-        mastheadImage={getImage(image.node)}
+        mastheadImage={imageObject}
         backgroundColor="tomatenMango"
         header="tomaten-mango<br>chutney"
         image="tomatenMangoChutney"
