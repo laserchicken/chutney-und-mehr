@@ -6,7 +6,7 @@ export default function ProductMasthead({ image }) {
   return (
     <Background
       className={styles.masthead}
-      src={`https://test-chutney.imgix.net${image.images.fallback.src}`}
+      src={`https://chutney-und-mehr.imgix.net${image.images.fallback.src}`}
       sizes="100vw"
     />
   );
