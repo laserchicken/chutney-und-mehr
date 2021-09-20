@@ -3,8 +3,6 @@ import { Background } from "react-imgix";
 import * as styles from "./productMasthead.module.css";
 
 export default function ProductMasthead({ image }) {
-  console.log(image.images.fallback.src);
-
   return (
     <Background
       className={styles.masthead}
