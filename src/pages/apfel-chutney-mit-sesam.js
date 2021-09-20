@@ -1,14 +1,20 @@
 import React from "react";
 import Layout from "../components/layout";
+import { graphql } from "gatsby";
+import { getImage } from "gatsby-plugin-image";
 import Seo from "../components/seo";
 import ProductSubpageContainer from "../components/productSubpageContainer";
 
-export default function ApfelChutneyMitSesam() {
+export default function ApfelChutneyMitSesam({ data }) {
+  const image = data.allFile.edges.find((image) => {
+    return image.node.base.startsWith("apple");
+  });
+
   return (
     <Layout>
       <Seo />
       <ProductSubpageContainer
-        theme="apples"
+        mastheadImage={getImage(image.node)}
         backgroundColor="apple"
         header="apfel-chutney<br>mit sesam"
         image="appleChutney"
@@ -34,3 +40,18 @@ export default function ApfelChutneyMitSesam() {
     </Layout>
   );
 }
+
+export const pageQuery = graphql`
+  query {
+    allFile(filter: { relativeDirectory: { eq: "product" } }) {
+      edges {
+        node {
+          base
+          childImageSharp {
+            gatsbyImageData(layout: FULL_WIDTH, quality: 100)
+          }
+        }
+      }
+    }
+  }
+`;
