@@ -42,6 +42,11 @@ const Seo = ({ title, description, image, article }) => {
     'analytics_storage': 'denied'
   });
 
+  gtag('config', 'GA_MEASUREMENT_ID', {
+       client_storage: 'none',
+       client_id: CLIENT_ID,
+  });
+
   dataLayer.push({
     'event': 'default_consent'
   });
