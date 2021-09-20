@@ -24,23 +24,6 @@ const Seo = ({ title, description, image, article }) => {
 
   return (
     <Helmet title={seo.title}>
-      <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-SERQ4CVXDY"
-      ></script>
-      <script>
-        {`
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag("js", new Date());
-  gtag("config", "G-SERQ4CVXDY",{
-     client_storage: 'none',
-  });
-        `}
-      </script>
-
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
       {seo.url && <meta property="og:url" content={seo.url} />}
