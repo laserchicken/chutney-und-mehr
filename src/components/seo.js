@@ -35,16 +35,13 @@ const Seo = ({ title, description, image, article }) => {
     dataLayer.push(arguments);
   }
   gtag("js", new Date());
-  gtag("config", "G-SERQ4CVXDY");
+  gtag("config", "G-SERQ4CVXDY",{
+     client_storage: 'none',
+  });
 
   gtag('consent', 'default', {
     'ad_storage': 'denied',
     'analytics_storage': 'denied'
-  });
-
-  gtag('config', 'GA_MEASUREMENT_ID', {
-       client_storage: 'none',
-       client_id: CLIENT_ID,
   });
 
   dataLayer.push({
