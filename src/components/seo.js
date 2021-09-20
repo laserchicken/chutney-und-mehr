@@ -38,16 +38,6 @@ const Seo = ({ title, description, image, article }) => {
   gtag("config", "G-SERQ4CVXDY",{
      client_storage: 'none',
   });
-
-  gtag('consent', 'default', {
-    'ad_storage': 'denied',
-    'analytics_storage': 'denied'
-  });
-
-  dataLayer.push({
-    'event': 'default_consent'
-  });
-
         `}
       </script>
 
