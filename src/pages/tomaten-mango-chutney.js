@@ -7,7 +7,7 @@ import ProductSubpageContainer from "../components/productSubpageContainer";
 
 export default function TomatenMangoChutney({ data }) {
   const image = data.allFile.edges.find((image) => {
-    return image.node.base.startsWith("catering1");
+    return image.node.base.startsWith("mango");
   });
 
   return (
