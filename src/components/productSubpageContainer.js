@@ -11,7 +11,7 @@ import Footer from "./footer";
 import * as styles from "./productSubpageContainer.module.css";
 
 export default function ProductSubpageContainer({
-  mastheadImage,
+  theme,
   backgroundColor,
   header,
   subheader,
@@ -26,7 +26,7 @@ export default function ProductSubpageContainer({
         title="Wahl des Chutneys | CHUTNEY UND MEHR Manufaktur"
         description="Eine Geschmacksfülle in einem kleinen Glas. Ich bereite pikante, süße und saure Chutneys mit Obst- und Gemüsestücken nach meinen eigenen Rezepten zu, ohne künstliche Zusatzstoffe oder Konservierungsmittel."
       />
-      <ProductMasthead image={mastheadImage} />
+      <ProductMasthead theme={theme} />
       <ProductDetails
         header={header}
         subheader={subheader}
