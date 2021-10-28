@@ -1,6 +1,8 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Logo from "../icons/logo-combined.inline.svg";
+import datenschutz from "../downloads/datenschutz.pdf";
+import impressum from "../downloads/impressum.pdf";
 import * as styles from "./footer.module.css";
 
 export default function Footer() {
@@ -61,6 +63,26 @@ export default function Footer() {
             className={styles.responsiveSpan}
             dangerouslySetInnerHTML={{ __html: rights }}
           />
+          <span className={`${styles.textSeparator} ${styles.desktopOnly}`}>
+            {separator}
+          </span>
+          <a
+            className={`${styles.link} ${styles.responsiveSpan}`}
+            href={datenschutz}
+            target="_blank"
+          >
+            Datenschutz
+          </a>
+          <span className={`${styles.textSeparator} ${styles.desktopOnly}`}>
+            {separator}
+          </span>
+          <a
+            className={`${styles.link} ${styles.responsiveSpan}`}
+            href={impressum}
+            target="_blank"
+          >
+            Impressum
+          </a>
           <span className={`${styles.textSeparator} ${styles.desktopOnly}`}>
             {separator}
           </span>
