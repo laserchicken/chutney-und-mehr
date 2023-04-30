@@ -12,9 +12,6 @@ const Navigation = ({ className, onClick }) => (
     <Link className={styles.link} to="/" onClick={onClick}>
       Manufaktur
     </Link>
-    <Link className={styles.link} to="/#catering" onClick={onClick}>
-      Catering
-    </Link>
     <Link className={styles.link} to="/#kontakt" onClick={onClick}>
       Kontakt
     </Link>
